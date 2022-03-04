@@ -1,0 +1,553 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman';
+    background-color: rgba(194, 194, 194, 0.548);
+}
+
+.body__index {
+    
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "header"
+        "quienes"
+        "politica"
+        "footer";
+}
+
+.header{
+    grid-area: header;
+}
+
+h2 {
+    font: size 10px;
+    line-height : 25px;
+    text-align: justify;
+    padding: 2rem;
+}
+
+
+.header__contenedor {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    outline-style: solid;
+    outline-color: rgb(15, 33, 201);
+    margin: 0 auto;
+    height: 100%;
+    background-color: rgba(228, 223, 171, 0.61);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.header__logo{
+    max-width: 15rem;
+    max-height: 15rem;
+    
+}
+
+.header__lista{
+    
+    display: flex; 
+    margin-right: 2rem;
+}
+
+
+.header__item {
+    
+    list-style: none;
+}
+
+.header__link{
+    
+    color: rgb(12, 30, 197);
+    text-decoration: line;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    font-size: large;
+    
+
+
+}
+
+
+.quienes{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    grid-area: quienes;
+    margin-top: -2rem;
+    
+}
+
+.quienes__texto{
+
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+    padding: 3rem;
+    height: 600px;
+    min-width: 50%;
+    
+}
+
+.quienes__titulo{
+   
+    margin-right: 10rem ;
+    
+
+}
+
+.quienes__frase {
+
+    font-size: large;
+    line-height : 25px;
+    text-align: justify ;
+    padding: 1rem;
+}
+
+.quienes__foto{
+
+    max-height: 26rem;
+    border-radius: 10%;
+    
+    
+    
+    
+}
+
+.h3__index{
+    padding: 1rem;
+}
+
+
+.politica{
+    display: flex;
+    padding: 3rem;
+    grid-area: politica;
+}
+
+.politica__foto{
+    width: 600px;
+    height: 400px;
+    margin-top: 11rem;
+    border-radius: 10%;
+
+
+}
+
+.politica__texto{
+
+    font-size: large;
+    line-height : 25px;
+    text-align: justify;
+    padding: 3rem; 
+}
+
+.politica__subtitulo{
+    margin-bottom: 2rem;
+
+}
+
+.footer{
+    
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    outline-style: solid;
+    outline-color: rgb(12, 30, 197);
+    height: 7rem;
+    background-color:rgba(228, 223, 171, 0.61);
+    grid-area: footer;
+
+}
+
+.footer__logo{
+
+    height: 50px;
+    width: auto;
+  
+}
+
+.body__servicios {
+    
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "header"
+        "titulo__servicios"
+        "botones"
+        "servicios__ppal"
+        "footer";
+}
+
+.titulo__servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: larger;
+    grid-area: "titulo__servicios";
+   
+}
+
+.titulo__botones{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+
+
+}
+
+.botones{
+    display: flex;
+    justify-content:center ;
+    padding: 1rem;
+    margin-bottom: 10rem;
+    grid-area: "botones";
+   
+}
+
+.servicios__ppal{
+    grid-area: "servicios__ppal";
+}
+
+#cal{
+    display: flex;
+    align-items:center;
+    padding: 2rem;
+    
+    
+
+}
+
+.foto__cal1, .foto__cal2{
+    border-radius: 10%;
+    margin-top: 5rem;
+    width: auto;
+
+
+}
+
+.texto__cal{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-width: 30rem;
+    
+    justify-content: space-around;
+    
+   
+}
+
+.articulo__cal{
+    margin-top: 2rem;
+}
+
+
+.boton{
+    background-color: #8984d6; 
+    border: solid;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: 'Times New Roman';
+    width: 12rem;
+    height: 5rem;
+    font-size: 0.9rem;
+    margin-right: 2rem;
+   
+}
+
+.boton__peq{
+    background-color: #8984d6; 
+    border: solid;
+    color: rgb(0, 0, 0);
+    width: 6rem;
+    height: 4rem;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    
+    position:relative;
+    left: 50%;
+}
+
+#ma{
+    display: flex;
+    align-items:center;
+    padding: 2rem;
+    
+
+}
+
+
+
+.foto__ma{
+    
+    height: auto;
+    border-radius: 4rem;
+    padding: 2rem;
+    width: auto;
+    
+    
+   
+    
+}
+
+.texto__ma{
+   
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-width: 30rem;
+    justify-content: space-around;
+
+}
+
+#seg{
+    display: flex;
+    align-items:center;
+    margin-top: 7rem;
+
+
+}
+
+.texto__seg{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-width: 30rem;
+    justify-content: space-around;
+
+
+}
+
+.foto__seg{
+    width: 40rem;
+    height: auto;
+    border-radius: 4rem;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.grid__otros{
+    padding: 4%;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 50px;
+    grid-template-areas: 
+    "otros__titulo otros__titulo otros__titulo"
+    "riesgos regulatorio soporte" 
+    "proyectos proveedores cinco-s";
+       
+    text-align: center;   
+    margin-bottom: 4rem;
+    margin-top: 9rem;
+    border-style: solid;
+    color: white;
+    background-color: beige;
+    
+    
+
+} 
+
+.otros__titulo{ 
+    grid-area: otros__titulo;
+    text-align: center;
+    background-color:rgb(107, 107, 226);
+    text-decoration: underline;
+    width: 300px;
+    justify-self: center;
+    
+}
+
+.riesgos{
+    grid-area: riesgos;
+    background-color:rgb(107, 107, 226);
+   
+   
+}
+
+.regulatorio{
+    grid-area: regulatorio;
+    background-color:rgb(107, 107, 226);
+}
+
+.soporte{
+    grid-area: soporte;
+    background-color:rgb(107, 107, 226);
+}
+
+.proyectos{
+    grid-area: proyectos;
+    background-color:rgb(107, 107, 226);
+}
+
+.proveedores{
+    grid-area: proveedores;
+    background-color:rgb(107, 107, 226);
+}
+
+.cinco-s{
+    grid-area: cinco-s;
+    background-color:rgb(107, 107, 226);
+}
+
+.body__formacion {
+    
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "header"
+        "main__formacion"
+        "footer";
+}
+
+.main__formacion {
+    grid-area: main__formacion;
+}
+
+
+.tabla__foto__formacion{
+
+    display: flex;
+    padding: 2rem;
+    justify-content:space-around;
+}
+
+.tabla__formacion{
+    max-width: 60%;
+}
+
+.fotos__formacion{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    
+}
+
+.foto__form1, .foto__form2{
+    border-radius: 2rem;
+
+}
+
+.titulo__clientes{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    
+}
+
+.texto__clientes{
+    
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.foto__clientes{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    
+    
+}
+
+.empresas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+
+
+.datos__ACB{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}   
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-around;
+    min-height: 15rem;
+}
+
+.resto__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.mensaje{
+    margin-left: 10rem;
+    margin-bottom: 3rem;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    
+    .header__contenedor {
+        flex-direction: column;  
+        
+    }    
+
+    .header__lista {
+        margin-top: 1rem;
+    }
+
+    .quienes {
+        flex-direction: column;
+    }
+
+    .politica{
+        flex-direction:column-reverse;
+    }
+
+    .politica__foto {
+        margin-top: 1rem;
+    }
+
+    .tabla__foto__formacion {
+        flex-direction:column;
+        align-items: center;
+       
+        
+    }
+
+    .foto__form2 {
+        display:none
+    }
+
+    .tabla__formacion {
+        max-width: 100%;
+    }
+   
+
+}
