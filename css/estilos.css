@@ -6,9 +6,7 @@
 
 body {
     font-family: 'Times New Roman';
-    /* background: rgb(0,212,255);
-    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(86,224,144,1) 94%, rgba(2,0,36,1) 100%); */
-    /* background-color: rgba(194, 194, 194, 0.548); */
+   
     
 }
 
@@ -58,8 +56,8 @@ h2 {
 }  
 
 .header__logo{
-    max-width: 25% ;
-    h
+    max-width: 25%;
+    
     
 }
 
@@ -67,29 +65,7 @@ h2 {
     justify-content: end;
 }
 
-/* .nav-item{
-    
-    display: flex; 
-    margin-right: 2rem;
-    justify-content: end;
-} */
-
-/* header__item {
-    
-    list-style: none;
-}
-
-.header__link{
-    
-    color: rgb(12, 30, 197);
-    text-decoration: line;
-    letter-spacing: 0.1rem;
-    padding: 1rem;
-    font-size: large;
-    
-
-
-} */
+/
 
 .links__nav{
     font-size: 20px ;
@@ -117,6 +93,7 @@ h2 {
     padding: 3rem;
     height: 600px;
     min-width: 50%;
+    margin-bottom: 5rem;
     
 }
 
@@ -133,6 +110,7 @@ h2 {
     line-height : 25px;
     text-align: justify ;
     padding: 1rem;
+    
 }
 
 .quienes__foto{
@@ -207,15 +185,7 @@ h2 {
 .body__servicios {
     background: rgb(248,254,255);
     background: linear-gradient(90deg, rgba(248,254,255,1) 0%, rgba(227,241,244,1) 50%, rgba(255,255,255,1) 100%);
-    /* display: grid;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: auto;
-    grid-template-areas:
-        "header"
-        "titulo__servicios"
-        "botones"
-        "servicios__ppal"
-        "footer"; */
+    
 } 
 
 .titulo__servicios{
@@ -248,22 +218,11 @@ h2 {
 }
 
 
-/* .servicios__ppal{
-    grid-area: "servicios__ppal";
-} */
-
-/* #cal{
-    display: flex;
-    align-items:center;
-    padding: 2rem;
-}  */
 
 .foto__cal, .foto__ma, .foto__seg{
     border-radius: 10%;
     width: 100%;
-    
-    
-    
+       
 } 
 
 
@@ -278,18 +237,9 @@ h2 {
 
 .texto__cal{
     margin-top: -2rem;
-    /* display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    min-width: 30rem;
-    justify-content: space-around; */
-    
-   
+       
 }
 
-/* .articulo__cal{
-    margin-top: 2rem;
-} */
 
 
 .boton{
@@ -331,13 +281,7 @@ h2 {
     margin-top: 2rem;
 }
 
-/* #ma{
-    display: flex;
-    align-items:center;
-    padding: 2rem;
-    
 
-}
 
 
 
@@ -347,10 +291,7 @@ h2 {
     border-radius: 4rem;
     padding: 2rem;
     width: auto;
-    
-    
-   
-    
+        
 }
 
 .texto__ma{
@@ -388,41 +329,16 @@ h2 {
     padding: 2rem;
     margin-top: 4rem;
 }
- */
-/* .grid__otros{
-    padding: 4%;
-    display: grid;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 60px;
-    row-gap: 50px;
-    grid-template-areas: 
-    "otros__titulo otros__titulo otros__titulo"
-    "riesgos regulatorio soporte" 
-    "proyectos proveedores cinco-s";
-       
-    text-align: center;   
-    margin-bottom: 4rem;
-    margin-top: 9rem;
-    border-style: solid;
-    color: white;
-    background-color: beige;
-     
-    
-
-} */
-
+ 
 .otros{ 
     
     margin: auto;
-    
-    
+        
 }
 
 .acordeon{
     
     margin: auto;
-    
 }
 
 .accordion-button{
@@ -437,38 +353,6 @@ h2 {
     color: white ;
 }
 
-
-/* .riesgos{
-    grid-area: riesgos;
-    background-color:rgb(107, 107, 226);
-   
-   
-}
-
-.regulatorio{
-    grid-area: regulatorio;
-    background-color:rgb(107, 107, 226);
-}
-
-.soporte{
-    grid-area: soporte;
-    background-color:rgb(107, 107, 226);
-}
-
-.proyectos{
-    grid-area: proyectos;
-    background-color:rgb(107, 107, 226);
-}
-
-.proveedores{
-    grid-area: proveedores;
-    background-color:rgb(107, 107, 226);
-}
-
-.cinco-s{
-    grid-area: cinco-s;
-    background-color:rgb(107, 107, 226);
-} */
 
 .body__formacion {
     
@@ -530,8 +414,6 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    
-    
 }
 
 .empresas{
@@ -575,15 +457,6 @@ h2 {
 
 @media screen and (max-width: 1024px) {
     
-    /* .header__contenedor {
-        flex-direction: column;  
-        
-    }    
-
-    .header__lista {
-        margin-top: 1rem;
-    } */
-
     .quienes {
         flex-direction: column;
     }
@@ -631,7 +504,5 @@ h2 {
     .links__nav{
         background-color: white;
     }
-
-
 
 }
