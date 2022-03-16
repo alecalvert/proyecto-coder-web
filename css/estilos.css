@@ -71,89 +71,13 @@ h2 {
 }
 
 
-/* .quienes{
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 3rem;
-    grid-area: quienes;
-    margin-top: -2rem;
-    
-}
-
-.quienes__texto{
-
-    display: flex;
-    flex-direction: column;
-  
-    align-items: center;
-    padding: 3rem;
-    height: 600px;
-    min-width: 50%;
-    margin-bottom: 5rem;
-    
-}
-
-.quienes__titulo{
-   
-    margin-right: 10rem ;
-    
-
-}
-
-.quienes__frase {
-
-    font-size: large;
-    line-height : 25px;
-    text-align: justify ;
-    padding: 1rem;
-    
-}
-
-.quienes__foto{
-
-    max-height: 26rem;
-    border-radius: 10%;
-    
-    
-    
-    
-} */
 
 .h3__index{
     padding: 1rem;
 }
 
-/* 
-.politica{
-    display: flex;
-    padding: 3rem;
-    grid-area: politica;
-}
-
-.politica__foto{
-    width: 600px;
-    height: 400px;
-    margin-top: 11rem;
-    border-radius: 10%;
-
-
-}
-
-.politica__texto{
-
-    font-size: large;
-    line-height : 25px;
-    text-align: justify;
-    padding: 3rem; 
-}
-
-.politica__subtitulo{
-    margin-bottom: 2rem;
-
-} */
+/
 
 .quienes p, .politica p {
     font-size: 17px;
@@ -327,26 +251,8 @@ h2 {
     align-items:center;
     margin-top: 7rem;
 
-
 }
 
-.texto__seg{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    min-width: 30rem;
-    justify-content: space-around;
-
-
-}
-
-.foto__seg{
-    width: 40rem;
-    height: auto;
-    border-radius: 4rem;
-    padding: 2rem;
-    margin-top: 4rem;
-}
  
 .otros{ 
     
