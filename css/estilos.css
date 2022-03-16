@@ -372,42 +372,6 @@ h2 {
 }
 
 
-/* .body__formacion {
-    
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto;
-    grid-template-areas:
-        "header"
-        "main__formacion"
-        "footer";
-    background: rgb(248,254,255);
-    background: linear-gradient(90deg, rgba(248,254,255,1) 0%, rgba(227,241,244,1) 50%, rgba(255,255,255,1) 100%);
-} */
-
-/* .main__formacion {
-    grid-area: main__formacion;
-}
- */
-
-/* .tabla__foto__formacion{
-
-    display: flex;
-    padding: 2rem;
-    justify-content:space-around;
-}
-
-.tabla__formacion{
-    max-width: 60%;
-} */
-
-/* .fotos__formacion{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    
-} */
-
 .foto__form2{
     max-height: 16rem;
     width: 80%;
