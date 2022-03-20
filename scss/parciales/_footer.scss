@@ -1,0 +1,26 @@
+.footer{
+    
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    flex-direction: row;
+    outline-style: solid;
+    outline-color: rgb(12, 30, 197);
+    height: 7rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,59,115,1) 25%, rgba(0,212,255,1) 100%);
+    grid-area: footer;
+
+}
+
+.footer__logo{
+
+    height: 50px;
+    width: auto;
+  
+}
+
+.loguitos{
+    color: #000;
+}   

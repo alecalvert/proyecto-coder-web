@@ -1,0 +1,80 @@
+
+
+@media screen and (max-width: 1024px) {
+    
+    .quienes {
+        flex-direction: column;
+    }
+
+    .politica{
+        flex-direction:column-reverse;
+    }
+
+    .politica__foto {
+        margin-top: 1rem;
+    }
+
+    .botones{
+        transform: scale(0.8);
+    } 
+
+    .tabla__foto__formacion {
+        flex-direction:column;
+        align-items: center;
+    
+    }
+
+    
+    .tabla__formacion {
+        max-width: 100%;
+    }
+   
+}
+
+
+
+@media screen and (max-width: 991px){
+    .links__nav{
+        background-color: white;
+
+    }
+
+    .header__logo{
+        max-width: 30%;
+        
+    }
+
+    .foto__logos__clientesB{
+        display: none;
+    }    
+
+}
+
+@media screen and (max-width: 650px){
+
+    .botones{
+        transform: scale(0.7);
+        flex-direction: column;
+        
+        margin-top: -4rem;
+        margin-bottom: 2rem;
+       
+    }
+
+    .header__logo{
+        max-width: 50%;
+        
+    }
+
+    .footer__logo{
+        display: none;
+    }
+
+    .foto__logos__clientesA{
+    
+        max-width: 80vw;
+    }
+
+    
+
+}

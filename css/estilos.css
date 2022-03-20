@@ -1,404 +1,300 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
 body {
-    font-family: 'Times New Roman';
-   
-    
-}
+  font-family: 'Times New Roman'; }
 
 .body__index {
-    
-    display: grid;
+  /* display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto;
     grid-template-areas:
         "header"
         "quienes"
         "politica"
-        "footer";
-    background: rgb(248,254,255);
-    background: linear-gradient(90deg, rgba(248,254,255,1) 0%, rgba(227,241,244,1) 50%, rgba(255,255,255,1) 100%);
-}
-
-.header{
-    grid-area: header;
-}
+        "footer"; */
+  background: #f8feff;
+  background: linear-gradient(90deg, #f8feff 0%, #e3f1f4 50%, white 100%); }
 
 h2 {
-    font: size 10px;
-    line-height : 25px;
-    text-align: justify;
-    padding: 2rem;
-}
+  font: size 10px;
+  line-height: 25px;
+  text-align: justify;
+  padding: 2rem; }
 
-
-.header__contenedor {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    outline-style: solid;
-    outline-color: rgb(15, 33, 201);
-    margin: 0 auto;
-    height: 100%;
-    width: 100%;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,59,115,1) 25%, rgba(0,212,255,1) 100%);
-    display: flex;
-    flex-direction: row; 
-    justify-content:space-between;
-    align-items: center;
-    
-    
-
-}  
-
-.header__logo{
-    max-width: 22%;
-    
-    
-}
-
-.links__nav{
-    justify-content: end;
-}
-
-
-.links__nav{
-    font-size: 20px ;
-}
-
-
-
-
-.h3__index{
-    padding: 1rem;
-}
+.h3__index {
+  padding: 1rem; }
 
 .quienes p, .politica p {
-    font-size: 17px;
-}
+  font-size: 17px; }
 
-.contenedor__quienes{
-    padding-bottom: 5rem;
-    padding-top: 3rem;
-}
+.contenedor__quienes {
+  padding-bottom: 5rem;
+  padding-top: 3rem; }
 
+.contenedor__politica {
+  padding-bottom: 2rem; }
 
-.contenedor__politica{
-    padding-bottom: 2rem;
-}
-.politica__foto, .quienes__foto{
-    border-radius: 10%;
-
-
-}
-
-.footer{
-    
-   
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    outline-style: solid;
-    outline-color: rgb(12, 30, 197);
-    height: 7rem;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,59,115,1) 25%, rgba(0,212,255,1) 100%);
-    grid-area: footer;
-
-}
-
-.footer__logo{
-
-    height: 50px;
-    width: auto;
-  
-}
-
-.loguitos{
-    color: #000;
-}
+.politica__foto, .quienes__foto {
+  border-radius: 10%; }
 
 .body__servicios {
-    background: rgb(248,254,255);
-    background: linear-gradient(90deg, rgba(248,254,255,1) 0%, rgba(227,241,244,1) 50%, rgba(255,255,255,1) 100%);
-    
-} 
+  background: #f8feff;
+  background: linear-gradient(90deg, #f8feff 0%, #e3f1f4 50%, white 100%); }
 
-.titulo__servicios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    font-size: larger;
-    grid-area: "titulo__servicios";
-    
-    
-   
-}
+.titulo__servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: larger;
+  grid-area: "titulo__servicios"; }
 
-.titulo__botones{
-    margin-top: 4rem;
-    margin-bottom: 1rem;
+.titulo__botones {
+  margin-top: 4rem;
+  margin-bottom: 1rem; }
 
+.botones {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 5rem;
+  grid-area: "botones"; }
 
-}
+.foto__cal, .foto__ma, .foto__seg {
+  border-radius: 10%;
+  width: 100%; }
 
-.botones{
-    display: flex;
-    justify-content:center ;
-    padding: 1rem;
-    margin-bottom: 10rem;
-    grid-area: "botones";
-   
-}
+.fila__calidad-padding, .fila__ma-padding, .fila__seg-padding {
+  padding-top: 4rem;
+  align-items: center; }
 
+.texto__cal {
+  margin-top: -2rem; }
 
+.boton {
+  background-color: #8984d6;
+  border: solid;
+  color: black;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: 'Times New Roman';
+  width: 12rem;
+  height: 5rem;
+  font-size: 0.9rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  transition: 0.5s; }
 
-.foto__cal, .foto__ma, .foto__seg{
-    border-radius: 10%;
-    width: 100%;
-       
-} 
+.boton:hover {
+  width: 14rem;
+  height: 6rem;
+  background-color: #4940d1;
+  margin-bottom: 0rem;
+  font-size: 1.2rem; }
 
+.boton__peq {
+  background-color: #8984d6;
+  border: solid;
+  color: black;
+  width: 6rem;
+  height: 4rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  position: relative;
+  left: 50%;
+  margin-bottom: 8rem;
+  margin-top: 2rem; }
 
+.foto__ma {
+  height: auto;
+  border-radius: 4rem;
+  padding: 2rem;
+  width: auto; }
 
-.fila__calidad-padding, .fila__ma-padding, .fila__seg-padding{
-    
-    padding-top: 4rem;
-    align-items: center;
-}
+.texto__ma {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  min-width: 30rem;
+  justify-content: space-around; }
 
+.otros {
+  margin: auto; }
 
+.acordeon {
+  margin: auto; }
 
-.texto__cal{
-    margin-top: -2rem;
-       
-}
+.accordion-button {
+  background-color: #b8b4e6; }
 
+.acordeon__item {
+  background-color: black; }
 
+.texto__acordeon {
+  color: white; }
 
-.boton{
-    background-color: #8984d6; 
-    border: solid;
-    color: rgb(0, 0, 0);
-    padding: 1rem;
-    border-radius: 8px;
-    font-family: 'Times New Roman';
-    width: 12rem;
-    height: 5rem;
-    font-size: 0.9rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    transition: 0.5s ;
-}
+.foto__form2 {
+  max-height: 16rem;
+  width: 80%; }
 
-.boton:hover{
-    width: 14rem;
-    height: 6rem;
-    background-color: #4940d1; 
-    margin-bottom: 0rem;
-    font-size: 1.2rem;
-}
+.foto__form1, .foto__form2 {
+  border-radius: 2rem; }
 
-.boton__peq{
-    background-color: #8984d6; 
-    border: solid;
-    color: rgb(0, 0, 0);
-    width: 6rem;
-    height: 4rem;
-    font-size: 0.9rem;
-    border-radius: 8px;
-    
-    position:relative;
-    left: 50%;
-    margin-bottom: 8rem ;
-    margin-top: 2rem;
-}
+.fila__foto {
+  justify-content: center;
+  margin-bottom: 2rem; }
 
+.fila__tabla {
+  margin-bottom: 3rem; }
 
+.fila__boton__consultar {
+  margin-bottom: 1rem; }
 
+.titulo__clientes {
+  margin: auto;
+  width: 50%;
+  padding: 10px; }
 
+.texto__clientes {
+  margin: auto;
+  width: 50%;
+  padding: 10px; }
 
-.foto__ma{
-    
-    height: auto;
-    border-radius: 4rem;
-    padding: 2rem;
-    width: auto;
-        
-}
+.foto__clientes {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%; }
 
-.texto__ma{
-   
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    min-width: 30rem;
-    justify-content: space-around;
+.boton__clientes {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 2rem; }
 
-}
+.empresas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem; }
 
+.foto__logos__clientes {
+  display: flex;
+  justify-content: center; }
 
+.foto__logos__clientesA, .foto__logos__clientesB {
+  max-width: 80vw; }
 
- 
-.otros{ 
-    
-    margin: auto;
-        
-}
+.datos__ACB {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem; }
 
-.acordeon{
-    
-    margin: auto;
-}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  justify-content: space-around;
+  min-height: 15rem; }
 
-.accordion-button{
-    background-color:#b8b4e6
-}
-    
-.acordeon__item{
-    background-color:black;
-}
+.resto__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem; }
 
-.texto__acordeon{
-    color: white ;
-}
+.mensaje {
+  margin-left: 10rem;
+  margin-bottom: 3rem; }
 
+.campo__mensaje {
+  max-width: 100%; }
 
-.foto__form2{
-    max-height: 16rem;
-    width: 80%;
-}  
+.header {
+  grid-area: header; }
 
-.foto__form1, .foto__form2{
-    border-radius: 2rem;
+.header__contenedor {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  outline-style: solid;
+  outline-color: #0f21c9;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #3b3b73 25%, #00d4ff 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
 
-}
+.header__logo {
+  max-width: 22%; }
 
-.fila__foto{
-    justify-content: center;
-    margin-bottom: 2rem;
-}
+.links__nav {
+  justify-content: end; }
 
-.fila__tabla{
-    margin-bottom: 3rem;
-}
+.links__nav {
+  font-size: 20px; }
 
-.fila__boton__consultar{
-    margin-bottom: 2rem;
-}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  outline-style: solid;
+  outline-color: #0c1ec5;
+  height: 7rem;
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #3b3b73 25%, #00d4ff 100%);
+  grid-area: footer; }
 
-.titulo__clientes{
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    
-}
+.footer__logo {
+  height: 50px;
+  width: auto; }
 
-.texto__clientes{
-    
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-}
-
-.foto__clientes{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-}
-
-.empresas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem;
-}
-
-
-
-.datos__ACB{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-}   
-
-.form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    justify-content: space-around;
-    min-height: 15rem;
-}
-
-.resto__form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-}
-
-.mensaje{
-    margin-left: 10rem;
-    margin-bottom: 3rem;
-}
-
-
+.loguitos {
+  color: #000; }
 
 @media screen and (max-width: 1024px) {
-    
-    .quienes {
-        flex-direction: column;
-    }
+  .quienes {
+    flex-direction: column; }
+  .politica {
+    flex-direction: column-reverse; }
+  .politica__foto {
+    margin-top: 1rem; }
+  .botones {
+    transform: scale(0.8); }
+  .tabla__foto__formacion {
+    flex-direction: column;
+    align-items: center; }
+  .tabla__formacion {
+    max-width: 100%; } }
 
-    .politica{
-        flex-direction:column-reverse;
-    }
+@media screen and (max-width: 991px) {
+  .links__nav {
+    background-color: white; }
+  .header__logo {
+    max-width: 30%; }
+  .foto__logos__clientesB {
+    display: none; } }
 
-    .politica__foto {
-        margin-top: 1rem;
-    }
-
-    .botones{
-        transform: scale(0.8);
-    } 
-
-    .tabla__foto__formacion {
-        flex-direction:column;
-        align-items: center;
-       
-        
-    }
-
-    
-    .tabla__formacion {
-        max-width: 100%;
-    }
-   
-
-}
-
-@media screen and (max-width: 650px){
-
-    .botones{
-        transform: scale(0.7);
-        flex-direction: column;
-        
-    }
-}
-
-@media screen and (max-width: 991px){
-    .links__nav{
-        background-color: white;
-    }
-
-}
+@media screen and (max-width: 650px) {
+  .botones {
+    transform: scale(0.7);
+    flex-direction: column;
+    margin-top: -4rem;
+    margin-bottom: 2rem; }
+  .header__logo {
+    max-width: 50%; }
+  .footer__logo {
+    display: none; }
+  .foto__logos__clientesA {
+    max-width: 80vw; } }
