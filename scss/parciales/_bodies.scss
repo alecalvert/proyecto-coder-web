@@ -9,18 +9,27 @@ body {
    
 }
 
+.body__servicios {
+    height: 500px;
+    background-image: url("../imagenes/escritorio.jpg");
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size: 100%;
+    background-blend-mode:hard-light;
+  }
+
 .body__index {
     
-    /* display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: auto;
-    grid-template-areas:
-        "header"
-        "quienes"
-        "politica"
-        "footer"; */
+    
     background: rgb(248,254,255);
     background: linear-gradient(90deg, rgba(248,254,255,1) 0%, rgba(227,241,244,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.titulo__gral{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 
@@ -55,11 +64,9 @@ h2 {
 }
 
 
-.body__servicios {
-    background: rgb(248,254,255);
-    background: linear-gradient(90deg, rgba(248,254,255,1) 0%, rgba(227,241,244,1) 50%, rgba(255,255,255,1) 100%);
-    
-} 
+
+
+
 
 .titulo__servicios{
     display: flex;
@@ -74,9 +81,24 @@ h2 {
    
 }
 
+.body__servicios h1{
+    background-color: black;
+    color: white;
+    border-radius: .5rem;
+}
+
+.body__clientes, .body__contacto {
+    background: rgb(248,254,255);
+    background: linear-gradient(90deg, rgba(248,254,255,1) 0%, rgba(227,241,244,1) 50%, rgba(255,255,255,1) 100%);
+    
+} 
+
 .titulo__botones{
     margin-top: 4rem;
     margin-bottom: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: .5rem;
 
 }
 
@@ -86,6 +108,7 @@ h2 {
     padding: 1rem;
     margin-bottom: 5rem;
     grid-area: "botones";
+    
    
 }
 
@@ -111,12 +134,13 @@ h2 {
 
 
 .boton{
-    background-color: #8984d6; 
+    background-color: $color-botones; 
     border: solid;
     color: rgb(0, 0, 0);
     padding: 1rem;
     border-radius: 8px;
     font-family: 'Times New Roman';
+    font-weight: bold;
     width: 12rem;
     height: 5rem;
     font-size: 0.9rem;
@@ -126,16 +150,17 @@ h2 {
     transition: 0.5s ;
 }
 
-.boton:hover{
-    width: 14rem;
+.boton:hover, .boton__clientes:hover{
+    width: 15rem;
     height: 6rem;
     background-color: #4940d1; 
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
     font-size: 1.2rem;
+    
 }
 
 .boton__peq{
-    background-color: #8984d6; 
+    background-color: $color-botones; 
     border: solid;
     color: rgb(0, 0, 0);
     width: 6rem;
@@ -186,6 +211,7 @@ h2 {
     
 .acordeon__item{
     background-color:black;
+    transform: scale(0.9);
 }
 
 .texto__acordeon{
@@ -204,8 +230,10 @@ h2 {
 }
 
 .fila__foto{
-    justify-content: center;
+    display: flex;
+    justify-content:center;
     margin-bottom: 2rem;
+    
 }
 
 .fila__tabla{
@@ -238,10 +266,21 @@ h2 {
 }
 
 .boton__clientes{
-    display: flex;
-    justify-content:center ;
-    padding: 1rem;
-    margin-bottom: 2rem;
+       
+    margin-bottom: 2rem; 
+    background-color: $color-botones; 
+    border: solid;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    width: 12rem;
+    height: 5rem;
+    font-size: 0.9rem;
+    text-align: center;
+    
+    transition: 0.8s ;
+    
    
 }
 
