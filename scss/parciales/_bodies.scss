@@ -58,13 +58,11 @@ h2 {
 .contenedor__politica{
     padding-bottom: 2rem;
 }
+
 .politica__foto, .quienes__foto{
     border-radius: 10%;
 
 }
-
-
-
 
 
 
@@ -76,9 +74,7 @@ h2 {
     margin-top: 2rem;
     font-size: larger;
     grid-area: "titulo__servicios";
-    
-    
-   
+       
 }
 
 .body__servicios h1{
@@ -134,11 +130,12 @@ h2 {
 
 
 .boton{
-    background-color: $color-botones; 
-    border: solid;
-    color: rgb(0, 0, 0);
+    background-color: map-get($botones, color);
+    border: map-get($botones, borde);
+    color: map-get($botones, letras);
+    border-radius: map-get($botones , radio);
+        
     padding: 1rem;
-    border-radius: 8px;
     font-family: 'Times New Roman';
     font-weight: bold;
     width: 12rem;
@@ -160,13 +157,13 @@ h2 {
 }
 
 .boton__peq{
-    background-color: $color-botones; 
-    border: solid;
-    color: rgb(0, 0, 0);
+    background-color: map-get($botones, color);
+    border: map-get($botones, borde);
+    color: map-get($botones, letras);
+    border-radius: map-get($botones , radio);
     width: 6rem;
     height: 4rem;
     font-size: 0.9rem;
-    border-radius: 8px;
     position:relative;
     left: 50%;
     margin-bottom: 8rem ;
@@ -216,6 +213,7 @@ h2 {
 
 .texto__acordeon{
     color: white ;
+    font-size: 20px;
 }
 
 
@@ -267,11 +265,12 @@ h2 {
 
 .boton__clientes{
        
+    
+    background-color: map-get($botones, color);
+    border: map-get($botones, borde);
+    color: map-get($botones, letras);
+    border-radius: map-get($botones , radio);
     margin-bottom: 2rem; 
-    background-color: $color-botones; 
-    border: solid;
-    color: rgb(0, 0, 0);
-    border-radius: 8px;
     font-family: 'Times New Roman';
     font-weight: bold;
     width: 12rem;
@@ -282,6 +281,12 @@ h2 {
     transition: 0.8s ;
     
    
+}
+
+.boton__consulta-clientes{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 .empresas{
