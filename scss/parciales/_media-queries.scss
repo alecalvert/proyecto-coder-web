@@ -85,9 +85,20 @@
         font-size: 15px;
     }
 
+    .carousel  {
+        width: 100%;
+        height: auto;
+    }  
     .table{
         transform: scale(0.80);
         margin-left: -1.9rem;
     }
 
+    .fila__tabla{
+        margin-top: -3rem;
+    }
+
+    .foto__politica-invertir{
+    flex-direction:column-reverse;
+}
 }

@@ -56,7 +56,7 @@ h2 {
   grid-area: "titulo__servicios"; }
 
 .body__servicios h1 {
-  background-color: black;
+  background-color: #91b9c2;
   color: white;
   border-radius: .5rem; }
 
@@ -67,7 +67,7 @@ h2 {
 .titulo__botones {
   margin-top: 4rem;
   margin-bottom: 1rem;
-  background-color: black;
+  background-color: #91b9c2;
   color: white;
   border-radius: .5rem; }
 
@@ -162,10 +162,29 @@ h2 {
 .foto__form1, .foto__form2 {
   border-radius: 2rem; }
 
+.carousel {
+  width: 50%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  margin-bottom: 3rem; }
+
+.texto__carousel {
+  font-size: 130%;
+  background-color: #91b9c2; }
+
+.titulo__inhouse, .titulo__crono {
+  background: #e3f1f4;
+  background: linear-gradient(90deg, #e3f1f4 50%, #e3f1f4 50%, white 100%); }
+
+.titulo__crono {
+  height: 4rem; }
+
 .fila__foto {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  background-color: #91b9c2; }
 
 .fila__tabla {
   margin-bottom: 3rem; }
@@ -221,19 +240,40 @@ h2 {
 .foto__logos__clientesA, .foto__logos__clientesB {
   max-width: 80vw; }
 
+.body__contacto {
+  background-image: url("../imagenes/chart2.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: lighten; }
+
 .datos__ACB {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem; }
+  padding: 2rem;
+  color: white; }
 
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  justify-content: space-around;
-  min-height: 15rem; }
+  justify-content: space-between;
+  min-height: 15rem;
+  color: white; }
+
+.nombre__form {
+  padding: 1rem;
+  margin-left: -4rem; }
+
+.tel__form {
+  padding: 1rem; }
+
+.email__form {
+  padding: 1rem;
+  margin-left: 1rem; }
+
+.botones__form, .check__form {
+  padding: 1rem; }
 
 .resto__form {
   display: flex;
@@ -333,6 +373,13 @@ h2 {
     transform: scale(0.7); }
   .texto__acordeon {
     font-size: 15px; }
+  .carousel {
+    width: 100%;
+    height: auto; }
   .table {
     transform: scale(0.8);
-    margin-left: -1.9rem; } }
+    margin-left: -1.9rem; }
+  .fila__tabla {
+    margin-top: -3rem; }
+  .foto__politica-invertir {
+    flex-direction: column-reverse; } }
