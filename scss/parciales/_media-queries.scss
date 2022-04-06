@@ -52,10 +52,14 @@
 
 @media screen and (max-width: 650px){
 
+    .detalle__valores{
+        display:none
+    }
+
+
     .botones{
         transform: scale(0.7);
         flex-direction: column;
-        
         margin-top: -4rem;
         margin-bottom: 2rem;
        
@@ -71,17 +75,21 @@
     }
 
     .foto__logos__clientesA{
-    
         max-width: 80vw;
     }
 
     .boton__clientes{
         transform: scale(0.7);
+        font-size: larger;
         
     }
 
+    .titulo__clientes, .texto__clientes, .foto__clientes{
+        width: 80%;
+               
+    }
+
     .texto__acordeon{
-        
         font-size: 15px;
     }
 
@@ -99,6 +107,6 @@
     }
 
     .foto__politica-invertir{
-    flex-direction:column-reverse;
-}
+        flex-direction:column-reverse;
+    }
 }

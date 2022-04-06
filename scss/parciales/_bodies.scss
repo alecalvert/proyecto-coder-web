@@ -10,6 +10,7 @@ body {
 }
 
 .body__servicios {
+    
     height: 500px;
     background-image: url("../imagenes/escritorio.jpg");
     background-repeat:no-repeat;
@@ -17,19 +18,21 @@ body {
     background-position-y:center;
     background-size: 100%;
     background-blend-mode:hard-light;
+    
   }
 
 .body__index {
     
-    
-    background: rgb(248,254,255);
-    background: linear-gradient(90deg, rgba(248,254,255,1) 0%, rgba(227,241,244,1) 50%, rgba(255,255,255,1) 100%);
+    background: rgb(238,243,244);
+    background: linear-gradient(90deg, rgba(238,243,244,1) 0%, rgba(202,235,237,1) 15%, rgba(193,187,227,1) 100%);
+    /* background: rgb(248,254,255);
+    background: linear-gradient(90deg, rgba(248,254,255,1) 0%, rgba(227,241,244,1) 50%, rgba(255,255,255,1) 100%); */
 }
 
 .titulo__gral{
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -51,7 +54,7 @@ h2 {
 
 .contenedor__quienes{
     padding-bottom: 5rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 
@@ -116,6 +119,8 @@ h2 {
 } 
 
 
+
+
 .fila__calidad-padding, .fila__ma-padding, .fila__seg-padding{
     
     padding-top: 4rem;
@@ -155,6 +160,12 @@ h2 {
     font-size: 1.2rem;
     
 }
+
+.servicios__ppal{
+    background: rgb(238,243,244);
+    background: linear-gradient(90deg, rgba(238,243,244,1) 0%, rgba(202,235,237,1) 15%, rgba(193,187,227,1) 100%);
+}
+
 
 .boton__peq{
     background-color: map-get($botones, color);
@@ -203,7 +214,8 @@ h2 {
 }
 
 .accordion-button{
-    background-color:#b8b4e6
+    background-color:#46488b;
+    color: white;
 }
     
 .acordeon__item{
@@ -272,22 +284,23 @@ h2 {
 .titulo__clientes{
     margin: auto;
     width: 50%;
-    padding: 10px;
-    
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .texto__clientes{
     
     margin: auto;
     width: 50%;
-    padding: 10px;
+    margin-bottom: 2rem;
+    font-size: larger;
 }
 
 .foto__clientes{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+    display: block; 
+    
+    margin: auto;
+    width: 60%;
 }
 
 .boton__clientes{
@@ -367,7 +380,7 @@ h2 {
 
 .nombre__form{
     padding: 1rem;
-    margin-left: -4rem;
+    align-self: right;
 }
 
 .tel__form{
@@ -376,7 +389,7 @@ h2 {
 
 .email__form{
     padding: 1rem;
-    margin-left: 1rem;
+    
 }
 
 .botones__form, .check__form{

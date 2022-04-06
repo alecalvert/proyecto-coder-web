@@ -16,13 +16,15 @@ body {
   background-blend-mode: hard-light; }
 
 .body__index {
-  background: #f8feff;
-  background: linear-gradient(90deg, #f8feff 0%, #e3f1f4 50%, white 100%); }
+  background: #eef3f4;
+  background: linear-gradient(90deg, #eef3f4 0%, #caebed 15%, #c1bbe3 100%);
+  /* background: rgb(248,254,255);
+    background: linear-gradient(90deg, rgba(248,254,255,1) 0%, rgba(227,241,244,1) 50%, rgba(255,255,255,1) 100%); */ }
 
 .titulo__gral {
   text-align: center;
   margin-top: 2rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 h2 {
   font: size 10px;
@@ -38,7 +40,7 @@ h2 {
 
 .contenedor__quienes {
   padding-bottom: 5rem;
-  padding-top: 3rem; }
+  padding-top: 2rem; }
 
 .contenedor__politica {
   padding-bottom: 2rem; }
@@ -112,6 +114,10 @@ h2 {
   margin-bottom: 1rem;
   font-size: 1.2rem; }
 
+.servicios__ppal {
+  background: #eef3f4;
+  background: linear-gradient(90deg, #eef3f4 0%, #caebed 15%, #c1bbe3 100%); }
+
 .boton__peq {
   background-color: #8984d6;
   border: solid;
@@ -145,7 +151,8 @@ h2 {
   margin: auto; }
 
 .accordion-button {
-  background-color: #b8b4e6; }
+  background-color: #46488b;
+  color: white; }
 
 .acordeon__item {
   background-color: black;
@@ -195,18 +202,19 @@ h2 {
 .titulo__clientes {
   margin: auto;
   width: 50%;
-  padding: 10px; }
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
 
 .texto__clientes {
   margin: auto;
   width: 50%;
-  padding: 10px; }
+  margin-bottom: 2rem;
+  font-size: larger; }
 
 .foto__clientes {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%; }
+  margin: auto;
+  width: 60%; }
 
 .boton__clientes {
   background-color: #8984d6;
@@ -263,14 +271,13 @@ h2 {
 
 .nombre__form {
   padding: 1rem;
-  margin-left: -4rem; }
+  align-self: right; }
 
 .tel__form {
   padding: 1rem; }
 
 .email__form {
-  padding: 1rem;
-  margin-left: 1rem; }
+  padding: 1rem; }
 
 .botones__form, .check__form {
   padding: 1rem; }
@@ -358,6 +365,8 @@ h2 {
     display: none; } }
 
 @media screen and (max-width: 650px) {
+  .detalle__valores {
+    display: none; }
   .botones {
     transform: scale(0.7);
     flex-direction: column;
@@ -370,7 +379,10 @@ h2 {
   .foto__logos__clientesA {
     max-width: 80vw; }
   .boton__clientes {
-    transform: scale(0.7); }
+    transform: scale(0.7);
+    font-size: larger; }
+  .titulo__clientes, .texto__clientes, .foto__clientes {
+    width: 80%; }
   .texto__acordeon {
     font-size: 15px; }
   .carousel {
