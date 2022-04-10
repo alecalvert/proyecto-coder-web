@@ -14,10 +14,7 @@
         margin-top: 1rem;
     }
 
-    .botones{
-        transform: scale(0.8);
-    } 
-
+   
     .tabla__foto__formacion {
         flex-direction:column;
         align-items: center;
@@ -48,23 +45,62 @@
         display: none;
     }    
 
+    
+    .boton{
+        width: 10rem;
+        height: 3rem;
+    }
+
+    .fila__ma-padding{
+        flex-direction: column-reverse;
+    }
+
+    .boton__peq{
+        left: 40%;
+    }
+    
+
+}
+@media screen and (min-width:820px){
+    .boton:hover{
+    width: 15rem;
+    height: 6rem;
+    background-color: #4940d1; 
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 650px){
 
-    .detalle__valores{
-        display:none
+    .top__servicios {
+    
+        height: 300px;
+   
     }
 
+    .titulo__botones{
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+    }
 
     .botones{
-        transform: scale(0.7);
+        transform: scale(0.8);
         flex-direction: column;
-        margin-top: -4rem;
-        margin-bottom: 2rem;
-       
+        margin-top: -2rem;
+              
     }
 
+    .botones a{
+        padding-top: 0.5rem;
+    }
+
+    .boton{
+        width: 10rem;
+        height: 2rem;
+    }
+
+    
     .header__logo{
         max-width: 50%;
         
@@ -109,4 +145,5 @@
     .foto__politica-invertir{
         flex-direction:column-reverse;
     }
+
 }

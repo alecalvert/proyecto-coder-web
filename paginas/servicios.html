@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid header__contenedor">
                 
-                <img class="header__logo" src="../imagenes/logo ACB.jpg" alt="ACB Logo" width="100%">
+                <img class="header__logo" src="../imagenes/logo ACB.jpg" alt="ACB Logo" width="100%" onclick="window.location.href='../index.html'">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -55,43 +55,52 @@
     </header>
 
 
-    <div class="container">
+    <section class="top__servicios">
        
-        <section class="titulo__servicios" id="#top">
+        <div class="titulo__servicios" id="#top">
+                   
             <h1>Servicios de Sistemas de Gestión para su Negocio</h1>
+                         
+        </div>
+
+        <div>
             <h3 class="titulo__botones">ACB Consulting le ofrece los siguientes servicios:</h3>
-            
-        </section>
-        
 
-    </div>
+        </div>
+       
     
-    
-        
-        
-        
-    <section class="botones">
+        <div class="botones">
             
-        <a href="#cal">                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-            <input class="boton" type="button" value="CALIDAD"> 
-        </a>
+                
+            <a href="#cal">                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                <input class="boton" type="button" value="CALIDAD"> 
+            </a>
+                
+               
+            <a href="#ma">                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                <input class="boton" type="button" value="MEDIO AMBIENTE"> 
+            </a>
+
+                               
+            <a href="#seg">                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                <input class="boton" type="button" value="SEGURIDAD / SALUD"> 
+            </a>
+      
+                
+            <a href="#otros">                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                <input class="boton" type="button" value="OTROS SERVICIOS"> 
+            </a>                       
+            
+
+        </div>
 
 
-        <a href="#ma">                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-            <input class="boton" type="button" value="MEDIO AMBIENTE"> 
-        </a>
-
-        <a href="#seg">                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-            <input class="boton" type="button" value="SEGURIDAD / SALUD"> 
-        </a>
-
-        <a href="#otros">                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-            <input class="boton" type="button" value="OTROS SERVICIOS"> 
-        </a>    
+          
         
+    </section>    
         
 
-    </section>
+    
 
     
         
@@ -130,7 +139,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <aside data-aos="flip-left" throttleDelay: 50>
+                        <aside data-aos="flip-left">
                             <img class="img-fluid foto__cal" src="../imagenes/calidad2.jpg" alt="Calidad">
                             
                         </aside>
@@ -157,7 +166,7 @@
             <div class="container">
                 <div class="row fila__ma-padding">
                     <div class="col-md-6">
-                        <aside>
+                        <aside data-aos="flip-right">
                             <img class="img-fluid foto__ma" src="../imagenes/medioambiente.jpg" alt="Medio Ambiente">
 
                         </aside>
@@ -221,15 +230,10 @@
                             <article>
                                 <h3>ISO 45001 Gestión de Seguridad y Salud en el Trabajo</h3>
                                 <p>La Norma ISO 45001 contiene requisitos con guía para desarrollar un Sistemas de Gestión de Seguridad 
-                                     y Salud en el Trabajo. Este Sistema de Gestión permite mejorar el desempeño organizacional y
+                                    y Salud en el Trabajo. Este Sistema de Gestión permite mejorar el desempeño organizacional y
                                     posibilita reducir los riesgos, incrementar el bienestar y la salud en el trabajo.
-
                                     ISO 45001 es certificable y aplicable a organizaciones de todos los tamaños y tipos.
-                                    
-                                    Una organización es responsable de la seguridad y salud en el trabajo (SST) de sus empleados física 
-                                    y mentalmente; así como también la de otras personas que puedan verse afectadas por sus actividades. 
-                                   
-                                   
+                                        
                                 </p>
 
                             </article>
@@ -239,7 +243,7 @@
                         </div>    
                     </div>    
                         
-                    <div class="col-md-6">
+                    <div data-aos="flip-left" class="col-md-6">
                         <img class="img-fluid foto__seg" src="../imagenes/seg2.jpg" alt="Seguridad">
                     </div>
                 </div>
@@ -330,7 +334,7 @@
         <div class="footer">
                 
             <img class="footer__logo" src="../imagenes/logo ACB.jpg" alt="ACB Consulting">
-            <p>Copyright &copy; 2022 ACB Consulting</p> 
+            <p class="copyright">Copyright &copy; 2022 ACB Consulting</p> 
                 
             <div>
                 
@@ -344,8 +348,8 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-          </script>
+    <script>
+        AOS.init({delay: 50, duration: 1500,});
+    </script>
 </body>
 </html>

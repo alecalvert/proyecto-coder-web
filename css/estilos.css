@@ -6,25 +6,15 @@
 body {
   font-family: 'Times New Roman'; }
 
-.body__servicios {
-  height: 500px;
-  background-image: url("../imagenes/escritorio.jpg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  background-size: 100%;
-  background-blend-mode: hard-light; }
-
 .body__index {
   background: #eef3f4;
-  background: linear-gradient(90deg, #eef3f4 0%, #caebed 15%, #c1bbe3 100%);
-  /* background: rgb(248,254,255);
-    background: linear-gradient(90deg, rgba(248,254,255,1) 0%, rgba(227,241,244,1) 50%, rgba(255,255,255,1) 100%); */ }
+  background: linear-gradient(90deg, #eef3f4 0%, #caebed 15%, #c1bbe3 100%); }
 
 .titulo__gral {
   text-align: center;
   margin-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  background: white; }
 
 h2 {
   font: size 10px;
@@ -35,88 +25,77 @@ h2 {
 .h3__index {
   padding: 1rem; }
 
-.quienes p, .politica p {
+.quienes p, .politica p, .lista__valores {
   font-size: 17px; }
 
-.contenedor__quienes {
-  padding-bottom: 5rem;
-  padding-top: 2rem; }
+.contenedor__quienes, .contenedor__politica {
+  padding-bottom: 3rem;
+  border: solid;
+  margin: auto;
+  background-color: beige;
+  border-radius: 1rem;
+  box-shadow: 0px 10px 10px black;
+  margin-bottom: 3rem; }
 
-.contenedor__politica {
-  padding-bottom: 2rem; }
+.contenedor__quienes {
+  padding-top: 2rem; }
 
 .politica__foto, .quienes__foto {
   border-radius: 10%; }
 
 .titulo__servicios {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
+  margin: auto;
   margin-top: 2rem;
-  font-size: larger;
-  grid-area: "titulo__servicios"; }
+  margin-bottom: 4rem;
+  text-align: center; }
+
+.top__servicios {
+  height: 500px;
+  background-image: url("../imagenes/escritorio.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 100%;
+  background-blend-mode: hard-light; }
+
+.body__servicios {
+  background: #eef3f4;
+  background: linear-gradient(90deg, #eef3f4 0%, #caebed 15%, #c1bbe3 100%); }
 
 .body__servicios h1 {
-  background-color: #91b9c2;
-  color: white;
-  border-radius: .5rem; }
-
-.body__clientes, .body__contacto {
-  background: #f8feff;
-  background: linear-gradient(90deg, #f8feff 0%, #e3f1f4 50%, white 100%); }
+  background-color: white;
+  color: black; }
 
 .titulo__botones {
   margin-top: 4rem;
-  margin-bottom: 1rem;
-  background-color: #91b9c2;
+  margin-bottom: 2rem;
+  background-color: #51838f;
   color: white;
-  border-radius: .5rem; }
+  text-align: center; }
 
 .botones {
   display: flex;
-  justify-content: center;
-  padding: 1rem;
-  margin-bottom: 5rem;
-  grid-area: "botones"; }
-
-.foto__cal, .foto__ma, .foto__seg {
-  border-radius: 10%;
-  width: 100%; }
-
-.fila__calidad-padding, .fila__ma-padding, .fila__seg-padding {
-  padding-top: 4rem;
-  align-items: center; }
-
-.texto__cal {
-  margin-top: -2rem; }
+  justify-content: center; }
 
 .boton {
   background-color: #8984d6;
   border: solid;
   color: black;
   border-radius: 8px;
-  padding: 1rem;
   font-family: 'Times New Roman';
   font-weight: bold;
   width: 12rem;
   height: 5rem;
   font-size: 0.9rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  transition: 0.5s; }
+  transition: 0.5s;
+  margin: auto; }
 
-.boton:hover, .boton__clientes:hover {
-  width: 15rem;
-  height: 6rem;
-  background-color: #4940d1;
-  margin-bottom: 1rem;
-  font-size: 1.2rem; }
-
-.servicios__ppal {
-  background: #eef3f4;
-  background: linear-gradient(90deg, #eef3f4 0%, #caebed 15%, #c1bbe3 100%); }
+.fila__botones {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-left: -2rem; }
 
 .boton__peq {
   background-color: #8984d6;
@@ -128,8 +107,26 @@ h2 {
   font-size: 0.9rem;
   position: relative;
   left: 50%;
-  margin-bottom: 8rem;
-  margin-top: 2rem; }
+  margin-bottom: 7rem;
+  margin-top: 3rem; }
+
+.foto__cal, .foto__ma, .foto__seg {
+  border-radius: 10%;
+  width: 100%; }
+
+.fila__calidad-padding, .fila__ma-padding {
+  padding-top: 3rem;
+  align-items: center; }
+
+.texto__cal {
+  margin-top: -2rem; }
+
+.boton__clientes:hover {
+  width: 15rem;
+  height: 6rem;
+  background-color: #4940d1;
+  margin-bottom: 1rem;
+  font-size: 1.2rem; }
 
 .foto__ma {
   height: auto;
@@ -144,8 +141,8 @@ h2 {
   min-width: 30rem;
   justify-content: space-around; }
 
-.otros {
-  margin: auto; }
+.fila__seg-padding {
+  align-items: center; }
 
 .acordeon {
   margin: auto; }
@@ -199,6 +196,10 @@ h2 {
 .fila__boton__consultar {
   margin-bottom: 1rem; }
 
+.body__clientes, .body__contacto {
+  background: #f8feff;
+  background: linear-gradient(90deg, #f8feff 0%, #e3f1f4 50%, white 100%); }
+
 .titulo__clientes {
   margin: auto;
   width: 50%;
@@ -249,7 +250,7 @@ h2 {
   max-width: 80vw; }
 
 .body__contacto {
-  background-image: url("../imagenes/chart2.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)), url("../imagenes/chart2.jpg");
   background-repeat: no-repeat;
   background-blend-mode: lighten; }
 
@@ -258,7 +259,9 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  color: white; }
+  color: black;
+  width: 50vw;
+  margin: auto; }
 
 .form {
   display: flex;
@@ -267,7 +270,7 @@ h2 {
   padding: 2rem;
   justify-content: space-between;
   min-height: 15rem;
-  color: white; }
+  color: black; }
 
 .nombre__form {
   padding: 1rem;
@@ -314,7 +317,9 @@ h2 {
   align-items: center; }
 
 .header__logo {
-  max-width: 22%; }
+  max-width: 22%;
+  width: 15rem;
+  height: auto; }
 
 .links__nav {
   justify-content: end; }
@@ -341,6 +346,9 @@ h2 {
 .loguitos {
   color: #000; }
 
+.copyright {
+  color: white; }
+
 @media screen and (max-width: 1024px) {
   .quienes {
     flex-direction: column; }
@@ -348,8 +356,6 @@ h2 {
     flex-direction: column-reverse; }
   .politica__foto {
     margin-top: 1rem; }
-  .botones {
-    transform: scale(0.8); }
   .tabla__foto__formacion {
     flex-direction: column;
     align-items: center; }
@@ -362,16 +368,38 @@ h2 {
   .header__logo {
     max-width: 30%; }
   .foto__logos__clientesB {
-    display: none; } }
+    display: none; }
+  .boton {
+    width: 10rem;
+    height: 3rem; }
+  .fila__ma-padding {
+    flex-direction: column-reverse; }
+  .boton__peq {
+    left: 40%; } }
+
+@media screen and (min-width: 820px) {
+  .boton:hover {
+    width: 15rem;
+    height: 6rem;
+    background-color: #4940d1;
+    margin-bottom: 1rem;
+    font-size: 1.2rem; } }
 
 @media screen and (max-width: 650px) {
-  .detalle__valores {
-    display: none; }
+  .top__servicios {
+    height: 300px; }
+  .titulo__botones {
+    margin-top: -2rem;
+    margin-bottom: 1rem; }
   .botones {
-    transform: scale(0.7);
+    transform: scale(0.8);
     flex-direction: column;
-    margin-top: -4rem;
-    margin-bottom: 2rem; }
+    margin-top: -2rem; }
+  .botones a {
+    padding-top: 0.5rem; }
+  .boton {
+    width: 10rem;
+    height: 2rem; }
   .header__logo {
     max-width: 50%; }
   .footer__logo {

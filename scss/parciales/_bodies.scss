@@ -9,30 +9,21 @@ body {
    
 }
 
-.body__servicios {
-    
-    height: 500px;
-    background-image: url("../imagenes/escritorio.jpg");
-    background-repeat:no-repeat;
-    background-position-x:center;
-    background-position-y:center;
-    background-size: 100%;
-    background-blend-mode:hard-light;
-    
-  }
+
 
 .body__index {
     
     background: rgb(238,243,244);
     background: linear-gradient(90deg, rgba(238,243,244,1) 0%, rgba(202,235,237,1) 15%, rgba(193,187,227,1) 100%);
-    /* background: rgb(248,254,255);
-    background: linear-gradient(90deg, rgba(248,254,255,1) 0%, rgba(227,241,244,1) 50%, rgba(255,255,255,1) 100%); */
+    
 }
 
 .titulo__gral{
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    background: rgb(255,255,255);
+    
 }
 
 
@@ -48,19 +39,25 @@ h2 {
     padding: 1rem;
 }
 
-.quienes p, .politica p {
+.quienes p, .politica p, .lista__valores{
     font-size: 17px;
 }
 
+.contenedor__quienes, .contenedor__politica{
+    padding-bottom: 3rem;
+    border: solid;
+    margin: auto;
+    background-color: beige;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 10px black;
+    margin-bottom: 3rem;
+}
+
 .contenedor__quienes{
-    padding-bottom: 5rem;
     padding-top: 2rem;
 }
 
 
-.contenedor__politica{
-    padding-bottom: 2rem;
-}
 
 .politica__foto, .quienes__foto{
     border-radius: 10%;
@@ -70,69 +67,50 @@ h2 {
 
 
 .titulo__servicios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
+    
+    margin:auto;
     margin-top: 2rem;
-    font-size: larger;
-    grid-area: "titulo__servicios";
+    margin-bottom: 4rem;
+    text-align: center;
        
 }
 
-.body__servicios h1{
-    background-color: rgb(145, 185, 194);
-    color: white;
-    border-radius: .5rem;
+.top__servicios {
+    
+    height: 500px; 
+    background-image: url("../imagenes/escritorio.jpg");
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size: 100%;
+    background-blend-mode:hard-light;
+    
 }
 
-.body__clientes, .body__contacto {
-    background: rgb(248,254,255);
-    background: linear-gradient(90deg, rgba(248,254,255,1) 0%, rgba(227,241,244,1) 50%, rgba(255,255,255,1) 100%);
+.body__servicios{
+    background: rgb(238,243,244);
+    background: linear-gradient(90deg, rgba(238,243,244,1) 0%, rgba(202,235,237,1) 15%, rgba(193,187,227,1) 100%);
+}
+
+.body__servicios h1{
+    background-color: rgb(255,255,255);
+    color: black;
     
-} 
+}
+
 
 .titulo__botones{
     margin-top: 4rem;
-    margin-bottom: 1rem;
-    background-color: rgb(145, 185, 194);
+    margin-bottom: 2rem;
+    background-color: rgb(81, 131, 143);
     color: white;
-    border-radius: .5rem;
-
+    text-align: center;
 }
 
 .botones{
     display: flex;
-    justify-content:center ;
-    padding: 1rem;
-    margin-bottom: 5rem;
-    grid-area: "botones";
-    
-   
+    justify-content:center;
 }
-
-
-.foto__cal, .foto__ma, .foto__seg{
-    border-radius: 10%;
-    width: 100%;
-       
-} 
-
-
-
-
-.fila__calidad-padding, .fila__ma-padding, .fila__seg-padding{
-    
-    padding-top: 4rem;
-    align-items: center;
-}
-
-
-.texto__cal{
-    margin-top: -2rem;
-       
-}
-
 
 .boton{
     background-color: map-get($botones, color);
@@ -140,32 +118,24 @@ h2 {
     color: map-get($botones, letras);
     border-radius: map-get($botones , radio);
         
-    padding: 1rem;
     font-family: 'Times New Roman';
     font-weight: bold;
     width: 12rem;
     height: 5rem;
     font-size: 0.9rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    text-align: center;
     transition: 0.5s ;
+    margin: auto;
 }
 
-.boton:hover, .boton__clientes:hover{
-    width: 15rem;
-    height: 6rem;
-    background-color: #4940d1; 
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    
-}
 
-.servicios__ppal{
-    background: rgb(238,243,244);
-    background: linear-gradient(90deg, rgba(238,243,244,1) 0%, rgba(202,235,237,1) 15%, rgba(193,187,227,1) 100%);
+.fila__botones{
+    flex-direction: row;
+    width: 100%;
+    justify-content:space-between ;
+    padding: 1rem;
+    margin-left: -2rem;
+         
 }
-
 
 .boton__peq{
     background-color: map-get($botones, color);
@@ -177,8 +147,38 @@ h2 {
     font-size: 0.9rem;
     position:relative;
     left: 50%;
-    margin-bottom: 8rem ;
-    margin-top: 2rem;
+    margin-bottom: 7rem ;
+    margin-top: 3rem;
+}
+
+
+.foto__cal, .foto__ma, .foto__seg{
+    border-radius: 10%;
+    width: 100%;
+       
+} 
+
+
+.fila__calidad-padding, .fila__ma-padding{
+    
+    padding-top: 3rem;
+    align-items: center;
+}
+
+
+.texto__cal{
+    margin-top: -2rem;
+       
+}
+
+
+.boton__clientes:hover{
+    width: 15rem;
+    height: 6rem;
+    background-color: #4940d1; 
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    
 }
 
 
@@ -201,12 +201,12 @@ h2 {
 
 }
 
- 
-.otros{ 
+
+.fila__seg-padding{
     
-    margin: auto;
-        
+    align-items: center;
 }
+
 
 .acordeon{
     
@@ -281,6 +281,12 @@ h2 {
     
 }
 
+.body__clientes, .body__contacto {
+    background: rgb(248,254,255);
+    background: linear-gradient(90deg, rgba(248,254,255,1) 0%, rgba(227,241,244,1) 50%, rgba(255,255,255,1) 100%);
+    
+} 
+
 .titulo__clientes{
     margin: auto;
     width: 50%;
@@ -317,7 +323,6 @@ h2 {
     height: 5rem;
     font-size: 0.9rem;
     text-align: center;
-    
     transition: 0.8s ;
     
    
@@ -353,10 +358,9 @@ h2 {
 .body__contacto{
     
         
-        background-image: url("../imagenes/chart2.jpg");
-        background-repeat:no-repeat;
-       
-        background-blend-mode:lighten;
+    background-image:  linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)), url("../imagenes/chart2.jpg");
+    background-repeat:no-repeat;
+    background-blend-mode:lighten;
       
 }
 
@@ -365,7 +369,11 @@ h2 {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    color: white
+    color: black;
+    width: 50vw;
+    margin: auto;
+    
+    
 }   
 
 .form{
@@ -375,7 +383,10 @@ h2 {
     padding: 2rem;
     justify-content: space-between;
     min-height: 15rem;
-    color: white
+    color: black;
+    
+    
+    
 }
 
 .nombre__form{
