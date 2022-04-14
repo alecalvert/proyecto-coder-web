@@ -321,7 +321,7 @@ h2 {
     font-weight: bold;
     width: 12rem;
     height: 5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: center;
     transition: 0.8s ;
     
@@ -370,20 +370,25 @@ h2 {
     align-items: center;
     padding: 2rem;
     color: black;
-    width: 50vw;
+    width: 70vw;
     margin: auto;
-    
+    background: rgb(238,243,244);
+    background: linear-gradient(90deg, rgba(238,243,244,1) 0%, rgba(202,235,237,1) 15%, rgba(193,187,227,1) 100%);
+    border-radius: 1rem;
     
 }   
 
 .form{
-    display: flex;
+    
     flex-direction: column;
     align-items: center;
     padding: 2rem;
     justify-content: space-between;
     min-height: 15rem;
     color: black;
+    background-color: rgb(238,243,244);
+    width: 25rem;
+    margin: auto;
     
     
     
@@ -401,12 +406,29 @@ h2 {
 .email__form{
     padding: 1rem;
     
+    
 }
+
+.sunken{
+    margin: 0px 0px 0px 0px;
+    border-bottom: #ffdead solid 2px;
+    border-right: #ffdead solid 2px;
+    border-left: #c07300 solid 2px;
+    border-top:  #c07300 solid 2px; 
+    color: #000000;
+
+
+}
+
 
 .botones__form, .check__form{
+    display: flex;
     padding: 1rem;
+    justify-content: space-around;
 
 }
+
+
 
 .resto__form{
     display: flex;
