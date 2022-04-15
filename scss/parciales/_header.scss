@@ -1,6 +1,3 @@
-.header{
-    grid-area: header;
-}
 
 .header__contenedor {
     padding-top: 2%;
@@ -25,13 +22,14 @@
     max-width: 22%;
     width: 15rem ;
     height: auto;
+    cursor: pointer;
     
     
 }
 
 
 .links__nav{
-    justify-content: end;
+    justify-content:flex-end;
 }
 
 

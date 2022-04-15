@@ -16,14 +16,17 @@ body {
   margin-bottom: 2rem;
   background: white; }
 
-h2 {
-  font: size 10px;
-  line-height: 25px;
-  text-align: justify;
-  padding: 2rem; }
-
+/* h2 {
+    font: size 10px;
+    line-height : 25px;
+    text-align: justify;
+    padding: 2rem;
+} */
 .h3__index {
   padding: 1rem; }
+
+.quienes__titulo {
+  margin-bottom: 1rem; }
 
 .quienes p, .politica p, .lista__valores {
   font-size: 17px; }
@@ -39,6 +42,9 @@ h2 {
 
 .contenedor__quienes {
   padding-top: 2rem; }
+
+.politica__titulo {
+  margin-top: 1rem; }
 
 .politica__foto, .quienes__foto {
   border-radius: 10%; }
@@ -174,7 +180,7 @@ h2 {
   margin-bottom: 3rem; }
 
 .texto__carousel {
-  font-size: 130%;
+  font-size: 20px;
   background-color: #91b9c2; }
 
 .titulo__inhouse, .titulo__crono {
@@ -264,7 +270,8 @@ h2 {
   margin: auto;
   background: #eef3f4;
   background: linear-gradient(90deg, #eef3f4 0%, #caebed 15%, #c1bbe3 100%);
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  text-align: center; }
 
 .form {
   flex-direction: column;
@@ -298,7 +305,8 @@ h2 {
 .botones__form, .check__form {
   display: flex;
   padding: 1rem;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center; }
 
 .resto__form {
   display: flex;
@@ -312,9 +320,6 @@ h2 {
 
 .campo__mensaje {
   max-width: 100%; }
-
-.header {
-  grid-area: header; }
 
 .header__contenedor {
   padding-top: 2%;
@@ -334,10 +339,11 @@ h2 {
 .header__logo {
   max-width: 22%;
   width: 15rem;
-  height: auto; }
+  height: auto;
+  cursor: pointer; }
 
 .links__nav {
-  justify-content: end; }
+  justify-content: flex-end; }
 
 .links__nav {
   font-size: 20px; }
@@ -351,15 +357,15 @@ h2 {
   outline-color: #0c1ec5;
   height: 7rem;
   background: #020024;
-  background: linear-gradient(90deg, #020024 0%, #3b3b73 25%, #00d4ff 100%);
-  grid-area: footer; }
+  background: linear-gradient(90deg, #020024 0%, #3b3b73 25%, #00d4ff 100%); }
 
 .footer__logo {
   height: 50px;
   width: auto; }
 
 .loguitos {
-  color: #000; }
+  color: #000;
+  padding: 0.5rem; }
 
 .copyright {
   color: white;
@@ -437,6 +443,10 @@ h2 {
     margin-left: -1.9rem; }
   .fila__tabla {
     margin-top: -3rem; }
+  .texto__carousel h4 {
+    font-size: 17px; }
+  .texto__carousel p {
+    display: none; }
   .foto__politica-invertir {
     flex-direction: column-reverse; }
   .datos__ACB h1 {
