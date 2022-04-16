@@ -10,18 +10,37 @@ body {
   background: #eef3f4;
   background: linear-gradient(90deg, #eef3f4 0%, #caebed 15%, #c1bbe3 100%); }
 
+.bg__link__activo {
+  border-radius: 2rem; }
+
+.link-efecto {
+  color: #18272F;
+  position: relative;
+  text-decoration: none; }
+
+.link-efecto::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #1e3983;
+  bottom: 0;
+  left: 0;
+  transform-origin: top;
+  transform: scaleX(0);
+  transition: transform .3s ease-out; }
+
+.link-efecto:hover::before {
+  transform-origin: top;
+  transform: scaleX(1); }
+
 .titulo__gral {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
   background: white; }
 
-/* h2 {
-    font: size 10px;
-    line-height : 25px;
-    text-align: justify;
-    padding: 2rem;
-} */
 .h3__index {
   padding: 1rem; }
 
@@ -387,6 +406,8 @@ body {
 @media screen and (max-width: 991px) {
   .links__nav {
     background-color: white; }
+  .bg__link__activo {
+    border-radius: 0; }
   .header__logo {
     max-width: 30%; }
   .foto__logos__clientesB {
@@ -451,5 +472,7 @@ body {
     flex-direction: column-reverse; }
   .datos__ACB h1 {
     font-size: 25px; }
+  .dirmail {
+    font-size: 18px !important; }
   .datos__ACB h3 {
     font-size: 20px; } }

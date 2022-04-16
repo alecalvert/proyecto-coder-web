@@ -36,6 +36,10 @@
 
     }
 
+    .bg__link__activo{
+        border-radius: 0;
+    }
+
     .header__logo{
         max-width: 30%;
         
@@ -160,8 +164,13 @@
         font-size: 25px;
     }
 
+    .dirmail{
+        font-size: 18px !important;
+    }
+    
     .datos__ACB h3{
         font-size: 20px;
     }
+
 
 }
