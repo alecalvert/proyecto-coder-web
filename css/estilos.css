@@ -472,7 +472,7 @@ body {
     flex-direction: column-reverse; }
   .datos__ACB h1 {
     font-size: 25px; }
-  .dirmail {
-    font-size: 18px !important; }
+  .datos__ACB p {
+    font-size: 18px; }
   .datos__ACB h3 {
-    font-size: 20px; } }
+    font-size: 20pxs; } }
