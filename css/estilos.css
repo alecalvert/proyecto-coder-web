@@ -132,14 +132,14 @@ body {
   font-size: 0.9rem;
   position: relative;
   left: 50%;
-  margin-bottom: 7rem;
-  margin-top: 3rem; }
+  margin-bottom: 10rem;
+  margin-top: 5rem; }
 
 .foto__cal, .foto__ma, .foto__seg {
   border-radius: 10%;
   width: 100%; }
 
-.fila__calidad-padding, .fila__ma-padding {
+.fila__calidad-padding, .fila__ma-padding, .fila__seg-padding {
   padding-top: 3rem;
   align-items: center; }
 
@@ -166,8 +166,8 @@ body {
   min-width: 30rem;
   justify-content: space-around; }
 
-.fila__seg-padding {
-  align-items: center; }
+.otros__titulo {
+  margin-left: 1rem; }
 
 .acordeon {
   margin: auto; }
@@ -242,7 +242,7 @@ body {
   margin: auto;
   width: 60%; }
 
-.boton__clientes {
+.boton__acontacto {
   background-color: #8984d6;
   border: solid;
   color: black;
@@ -252,7 +252,7 @@ body {
   font-weight: bold;
   width: 12rem;
   height: 5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   transition: 0.8s; }
 
@@ -291,6 +291,9 @@ body {
   background: linear-gradient(90deg, #eef3f4 0%, #caebed 15%, #c1bbe3 100%);
   border-radius: 1rem;
   text-align: center; }
+
+.datos__ACB p {
+  font-size: 25px; }
 
 .form {
   flex-direction: column;
@@ -475,4 +478,4 @@ body {
   .datos__ACB p {
     font-size: 18px; }
   .datos__ACB h3 {
-    font-size: 20pxs; } }
+    font-size: 20px; } }

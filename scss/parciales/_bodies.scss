@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Times New Roman';
-   
 }
 
 
@@ -15,7 +14,6 @@ body {
     
     background: rgb(238,243,244);
     background: linear-gradient(90deg, rgba(238,243,244,1) 0%, rgba(202,235,237,1) 15%, rgba(193,187,227,1) 100%);
-    
 }
 
 .bg__link__activo{
@@ -26,7 +24,6 @@ body {
     color: #18272F;
     position: relative;
     text-decoration: none;
-    
 }
 
 .link-efecto::before{
@@ -43,13 +40,9 @@ body {
   transition: transform .3s ease-out;
 }
 
-
-
 .link-efecto:hover::before{
     transform-origin: top;
     transform: scaleX(1);
-
-
 }
 
 .titulo__gral{
@@ -57,10 +50,7 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
     background: rgb(255,255,255);
-    
 }
-
-
 
 .h3__index{
     padding: 1rem;
@@ -97,15 +87,12 @@ body {
 
 }
 
-
-
 .titulo__servicios{
     
     margin:auto;
     margin-top: 2rem;
     margin-bottom: 4rem;
-    text-align: center;
-       
+    text-align: center; 
 }
 
 .top__servicios {
@@ -150,7 +137,6 @@ body {
     border: map-get($botones, borde);
     color: map-get($botones, letras);
     border-radius: map-get($botones , radio);
-        
     font-family: 'Times New Roman';
     font-weight: bold;
     width: 12rem;
@@ -167,7 +153,6 @@ body {
     justify-content:space-between ;
     padding: 1rem;
     margin-left: -2rem;
-         
 }
 
 .boton__peq{
@@ -180,8 +165,8 @@ body {
     font-size: 0.9rem;
     position:relative;
     left: 50%;
-    margin-bottom: 7rem ;
-    margin-top: 3rem;
+    margin-bottom: 10rem ;
+    margin-top: 5rem;
 }
 
 
@@ -192,7 +177,7 @@ body {
 } 
 
 
-.fila__calidad-padding, .fila__ma-padding{
+.fila__calidad-padding, .fila__ma-padding, .fila__seg-padding {
     
     padding-top: 3rem;
     align-items: center;
@@ -234,12 +219,9 @@ body {
 
 }
 
-
-.fila__seg-padding{
-    
-    align-items: center;
+.otros__titulo{
+    margin-left: 1rem;
 }
-
 
 .acordeon{
     
@@ -342,9 +324,8 @@ body {
     width: 60%;
 }
 
-.boton__clientes{
-       
-    
+.boton__acontacto{
+           
     background-color: map-get($botones, color);
     border: map-get($botones, borde);
     color: map-get($botones, letras);
@@ -354,7 +335,7 @@ body {
     font-weight: bold;
     width: 12rem;
     height: 5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
     transition: 0.8s ;
     
@@ -389,12 +370,10 @@ body {
 
 
 .body__contacto{
-    
         
     background-image:  linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)), url("../imagenes/chart2.jpg");
     background-repeat:no-repeat;
     background-blend-mode:lighten;
-      
 }
 
 .datos__ACB{
@@ -412,6 +391,10 @@ body {
     
 }   
 
+.datos__ACB p{
+    font-size: 25px;
+}
+
 .form{
     
     flex-direction: column;
@@ -423,8 +406,6 @@ body {
     background-color: rgb(238,243,244);
     width: 25rem;
     margin: auto;
-    
-    
     
 }
 
@@ -440,7 +421,6 @@ body {
 .email__form{
     padding: 1rem;
     
-    
 }
 
 .sunken{
@@ -450,8 +430,6 @@ body {
     border-left: #c07300 solid 2px;
     border-top:  #c07300 solid 2px; 
     color: #000000;
-
-
 }
 
 
@@ -481,6 +459,5 @@ body {
 .campo__mensaje{
     max-width:100%;
     
-   
 }
 
